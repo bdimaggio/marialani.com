@@ -1,0 +1,27 @@
+body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure {
+    float: right;
+    padding-left: var(--wp--preset--spacing--40);
+    padding-bottom: var(--wp--preset--spacing--40);
+}
+
+body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure img {
+    max-width: 20vw;
+}
+
+@media (max-width: 781px) {
+    body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure img {
+        max-width: 40vw;
+    }
+}
+
+@media (max-width: 500px) {
+    body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure {
+        float: none;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure img {
+        max-width: 100%;
+    }
+}

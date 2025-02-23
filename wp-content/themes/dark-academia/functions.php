@@ -46,13 +46,24 @@ if ( ! function_exists( 'dark_academia_styles' ) ) :
 		// Register theme stylesheet.
 		wp_register_style(
 			'dark-academia-style',
-			get_stylesheet_directory_uri() . '/style.css',
+			get_stylesheet_directory_uri() . '/css/style.css',
 			array(),
 			wp_get_theme()->get( 'Version' )
 		);
 
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'dark-academia-style' );
+
+		// Register theme stylesheet override.
+		wp_register_style(
+			'dark-academia-style-custom',
+			get_stylesheet_directory_uri() . '/css/style-custom.css',
+			array(),
+			wp_get_theme()->get( 'Version' )
+		);
+
+		// Enqueue theme stylesheet.
+		wp_enqueue_style( 'dark-academia-style-custom' );
 
 	}
 
@@ -106,7 +117,7 @@ add_action('admin_init', 'display_theme_panel_fields');
 
 function my_admin_scripts() {
     wp_enqueue_media();
-    wp_register_script('theme-admin-js', '/wp-content/themes/dark-academia/js/theme-admin.js', array('jquery'));
+    wp_register_script('theme-admin-js', get_template_directory_uri() . '/js/theme-admin.js', array('jquery'));
     wp_enqueue_script('theme-admin-js');
 }
 add_action('admin_enqueue_scripts', 'my_admin_scripts');
