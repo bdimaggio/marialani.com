@@ -22,7 +22,7 @@ if ( ! function_exists( 'dark_academia_support' ) ) :
 	function dark_academia_support() {
 
 		// Enqueue editor styles.
-		add_editor_style( 'style.css' );
+		add_editor_style( 'css/style.css' );
 
 		// Make theme available for translation.
 		load_theme_textdomain( 'dark-academia' );
@@ -72,8 +72,10 @@ endif;
 add_action( 'wp_enqueue_scripts', 'dark_academia_styles' );
 
 function header_bg_display() {
+	$existing_img = get_option('header_bg');
 	?>
-        <input id="upload_image" type="text" size="36" name="header_bg" value="<?php echo get_option('header_bg'); ?>" />
+        <input id="upload_image" type="hidden" size="36" name="header_bg" value="<?php echo existing_img; ?>" />
+		<img id="existing-img" src="<?php echo $existing_img; ?>" />
 	<?php
 }
 
