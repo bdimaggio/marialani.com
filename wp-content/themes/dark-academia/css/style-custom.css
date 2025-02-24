@@ -8,6 +8,10 @@ body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure
     max-width: 20vw;
 }
 
+body.home #pinned-text p:first-of-type {
+    margin-top: 0;
+}
+
 @media (max-width: 781px) {
     body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure img {
         max-width: 40vw;

@@ -7,6 +7,9 @@
  */
 
 declare( strict_types = 1 );
+if ($pinned_text = get_option('pinned_text')) {
+	$pinned_text = '<p>' . implode('</p><p>', array_filter(array_map('trim', explode("\n", $pinned_text)))) . '</p>';
+}
 ?>
 
 <!-- wp:column -->
@@ -15,6 +18,9 @@ declare( strict_types = 1 );
 	<div class="wp-block-group" style="min-height:100vh">
 		<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 		<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)">
+			<div id="pinned-text">
+				<?php echo $pinned_text; ?>
+			</div>
 			<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-query">
 				<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|80"}}} -->

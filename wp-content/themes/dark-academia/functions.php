@@ -71,8 +71,13 @@ endif;
 
 add_action( 'wp_enqueue_scripts', 'dark_academia_styles' );
 
-function header_bg_display() {
+function pinned_text_display() {
+	?>
+		<textarea id="pinned-text" rows="10" cols="60" name="pinned_text"><?php echo get_option('pinned_text'); ?></textarea>
+	<?php
+}
 
+function header_bg_display() {
 	?>
 		<input id="upload-image" type="hidden" size="36" name="header_bg" value="<?php echo get_option('header_bg'); ?>" />
 		<img id="existing-image" style="max-width: 25vw;" src="<?php echo get_option('header_bg'); ?>" />
@@ -101,21 +106,23 @@ function theme_settings_page() {
 }
 
 function add_theme_menu_item() {
-	add_menu_page( 'Theme Settings', 'Theme Settings', 'manage_options', 'theme-panel', 'theme_settings_page', null, 99 );
+	add_menu_page( 'Theme Settings', 'Theme Settings', 'manage_options', 'theme-settings', 'theme_settings_page', null, 99 );
 }
 
 add_action('admin_menu', 'add_theme_menu_item');
 
-function display_theme_panel_fields() {
+function display_theme_settings_fields() {
 	add_settings_section('section', '', null, 'theme-options');
 
+	add_settings_field('pinned_text', 'Pinned Text', 'pinned_text_display', 'theme-options', 'section');
 	add_settings_field('header_bg', 'Header Background Image', 'header_bg_display', 'theme-options', 'section');
 	add_settings_field('header_bg_button', '', 'header_bg_button', 'theme-options', 'section');
 
     register_setting('section', 'header_bg', 'esc_attr');
+	register_setting('section', 'pinned_text', 'esc_attr');
 }
 
-add_action('admin_init', 'display_theme_panel_fields');
+add_action('admin_init', 'display_theme_settings_fields');
 
 function my_admin_scripts() {
     wp_enqueue_media();
