@@ -72,16 +72,16 @@ endif;
 add_action( 'wp_enqueue_scripts', 'dark_academia_styles' );
 
 function header_bg_display() {
-	$existing_img = get_option('header_bg');
+
 	?>
-        <input id="upload_image" type="hidden" size="36" name="header_bg" value="<?php echo existing_img; ?>" />
-		<img id="existing-img" src="<?php echo $existing_img; ?>" />
+		<input id="upload-image" type="hidden" size="36" name="header_bg" value="<?php echo get_option('header_bg'); ?>" />
+		<img id="existing-image" style="max-width: 25vw;" src="<?php echo get_option('header_bg'); ?>" />
 	<?php
 }
 
 function header_bg_button() {
 	?>
-	    <input id="upload_image_button" class="button" type="button" value="Choose Image" />
+	    <input id="upload-image-button" class="button" type="button" value="Choose Image" />
 	<?php
 }
 
