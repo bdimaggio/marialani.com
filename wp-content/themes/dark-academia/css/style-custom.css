@@ -55,6 +55,14 @@ a:where(:not(.wp-element-button)) {
 }
 
 /* Top nav */
+.wp-block-navigation__responsive-container.is-menu-open {
+    padding-top: clamp(1rem,var(--wp--preset--spacing--70),20rem);
+}
+
+.has-modal-open .wp-block-navigation__responsive-close {
+    margin-left: 0;
+}
+
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation__responsive-container.is-menu-open {
     background-color: rgb(34, 55, 89);
     color: #fff;
