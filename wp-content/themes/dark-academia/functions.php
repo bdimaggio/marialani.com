@@ -119,7 +119,7 @@ function display_theme_settings_fields() {
 	add_settings_field('header_bg_button', '', 'header_bg_button', 'theme-options', 'section');
 
     register_setting('section', 'header_bg', 'esc_attr');
-	register_setting('section', 'pinned_text', 'esc_attr');
+	register_setting('section', 'pinned_text');
 }
 
 add_action('admin_init', 'display_theme_settings_fields');

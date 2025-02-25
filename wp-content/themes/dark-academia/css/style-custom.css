@@ -29,3 +29,24 @@ body.home #pinned-text p:first-of-type {
         max-width: 100%;
     }
 }
+
+/* Pinned text */
+#pinned-text {
+    background-color: rgb(34, 55, 89);
+    color: #fff;
+}
+
+/* Top nav */
+.wp-block-navigation:not(.has-text-color) .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: rgb(34, 55, 89);
+    color: #fff;
+}
+
+.wp-block-navigation__responsive-container.hidden-by-default ul.wp-block-page-list li {
+    margin-bottom: 1.5rem;
+}
+
+.wp-block-navigation__responsive-container-close {
+    right: auto;
+    left: 0;
+}
