@@ -30,6 +30,11 @@ body.home #pinned-text p:first-of-type {
     }
 }
 
+/* A corny way of removing post images from the list on the home page. */
+body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure.wp-block-post-featured-image {
+    display: none;
+}
+
 /* Pinned text */
 #pinned-text {
     background-color: rgb(34, 55, 89);
