@@ -36,6 +36,10 @@ body.home #pinned-text p:first-of-type {
     color: #fff;
 }
 
+#pinned-text a:where(:not(.wp-element-button)) {
+    color: #fff;
+}
+
 /* Top nav */
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation__responsive-container.is-menu-open {
     background-color: rgb(34, 55, 89);
