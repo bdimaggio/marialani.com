@@ -42,7 +42,16 @@ body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure
 }
 
 #pinned-text a:where(:not(.wp-element-button)) {
-    color: #fff;
+    color: #80c7f2 !important;
+    text-decoration: none;
+}
+
+a:where(:not(.wp-element-button)) {
+    color: rgb(48 89 155);
+}
+
+#pinned-text a:where(:not(.wp-element-button)):hover {
+    text-decoration: underline;
 }
 
 /* Top nav */
