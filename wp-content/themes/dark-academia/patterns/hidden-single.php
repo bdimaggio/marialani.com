@@ -42,10 +42,6 @@ declare( strict_types = 1 );
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 					<div class="wp-block-group">
 						<!-- wp:post-author-name /-->
-
-						<!-- wp:post-terms {"term":"category"} /-->
-
-						<!-- wp:post-terms {"term":"post_tag"} /-->
 					</div>
 					<!-- /wp:group -->
 				</div>
