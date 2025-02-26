@@ -83,3 +83,7 @@ a:where(:not(.wp-element-button)) {
     right: auto;
     left: 0;
 }
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
+    font-size: var(--wp--preset--font-size--large);
+}
