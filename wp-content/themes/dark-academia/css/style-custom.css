@@ -4,6 +4,13 @@
     background-color: #fff7b2;
 }
 
+@media (max-width: 781px) {
+    .wp-container-2.is-position-sticky {
+        padding-left: 0;
+    }
+}
+
+
 /* Post images on the home page (before we decided to hide them; see below). */
 body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure {
     float: right;

@@ -11,7 +11,7 @@ declare( strict_types = 1 );
 
 <!-- wp:column -->
 <div class="wp-block-column">
-	<!-- wp:group {"style":{"dimensions":{"minHeight":"100vh"},"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|70"}},"background":{"backgroundImage":{"url":"<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/groovepaper.png","source":"file","title":"groovepaper"},"backgroundSize":"300px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+	<!-- wp:group {"style":{"dimensions":{"minHeight":"100vh"},"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|70"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
 	<div class="wp-block-group" style="min-height:100vh;padding-top:var(--wp--preset--spacing--70)">
 		<!-- wp:spacer {"height":"0px","style":{"layout":{"selfStretch":"fixed","flexSize":"24px"},"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}}} -->
 		<div style="margin-bottom:var(--wp--preset--spacing--70);height:0px" aria-hidden="true" class="wp-block-spacer"></div>
