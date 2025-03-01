@@ -24,8 +24,8 @@ if ($pinned_text = get_option('pinned_text')) {
 					<?php echo $pinned_text; ?>
 				</div>
 			</div>
-			<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-query" style="margin-top:var(--wp--preset--spacing--60)">
+			<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]}} -->
+			<div class="wp-block-query" style="margin-block-start: 0;">
 				<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|80"}}} -->
 					<!-- wp:group {"layout":{"type":"constrained"}} -->
 					<div class="wp-block-group">
@@ -44,7 +44,7 @@ if ($pinned_text = get_option('pinned_text')) {
 					<!-- /wp:group -->
 				<!-- /wp:post-template -->
 
-				<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
+				<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70)">
 					<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"left","orientation":"vertical"}} -->
 						<!-- wp:query-pagination-previous /-->
