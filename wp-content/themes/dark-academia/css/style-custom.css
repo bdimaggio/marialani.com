@@ -1,15 +1,3 @@
-/* Header */
-.wp-container-2.is-position-sticky {
-    padding-left: 20px;
-    background-color: #fff7b2;
-}
-
-@media (max-width: 781px) {
-    .wp-container-2.is-position-sticky {
-        padding-left: 0;
-    }
-}
-
 /* Control padding in homepage post list so as to put a border between them. */
 .wp-container-core-post-template-is-layout-1 > * {
     margin-block-start: 0;
