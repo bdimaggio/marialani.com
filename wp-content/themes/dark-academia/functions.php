@@ -130,3 +130,9 @@ function my_admin_scripts() {
     wp_enqueue_script('theme-admin-js');
 }
 add_action('admin_enqueue_scripts', 'my_admin_scripts');
+
+function add_favicon(){ ?>
+    <!-- Custom Favicons -->
+	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/images/favicon.ico"/>
+    <?php }
+add_action('wp_head','add_favicon');

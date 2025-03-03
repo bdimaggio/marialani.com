@@ -20,6 +20,10 @@
     margin-block-start: 0;
 }
 
+.wp-container-core-post-template-is-layout-1 h2.wp-block-post-title {
+    margin-block-end: .35em;
+}
+
 /* Post images on the home page (before we decided to hide them; see below). */
 body.home ul.wp-block-post-template li.wp-block-post > div.wp-block-group figure {
     float: right;
