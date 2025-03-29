@@ -26,24 +26,14 @@ declare( strict_types = 1 );
 						<!-- wp:post-date /-->
 
 						<!-- wp:post-title /-->
+
+						<div class="wp-block-post-author-name">
+							By <!-- wp:post-author-name /-->
+						</div>
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:post-content {"lock":{"move":false,"remove":true},"layout":{"type":"constrained","justifyContent":"center"}} /-->
-				</div>
-				<!-- /wp:group -->
-
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-				<div class="wp-block-group">
-					<!-- wp:separator {"className":"is-style-wide"} -->
-					<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
-					<!-- /wp:separator -->
-
-					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-					<div class="wp-block-group">
-						<!-- wp:post-author-name /-->
-					</div>
-					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
 			</div>
