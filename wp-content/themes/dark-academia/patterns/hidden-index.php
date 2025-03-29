@@ -36,6 +36,8 @@ if ($pinned_text = get_option('pinned_text')) {
 							<!-- wp:post-date /-->
 
 							<!-- wp:post-title {"isLink":true} /-->
+
+							<div class="wp-block-post-author-name">By <!-- wp:post-author-name /--></div>
 						</div>
 						<!-- /wp:group -->
 

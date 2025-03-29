@@ -20,8 +20,12 @@
     margin-block-start: 0;
 }
 
-.wp-container-core-post-template-is-layout-1 h2.wp-block-post-title {
-    margin-block-end: .35em;
+.wp-container-core-post-template-is-layout-1 h2.wp-block-post-title + .wp-block-post-author-name {
+    margin-block-end: 2em;
+}
+
+.wp-container-core-post-template-is-layout-1 h2.wp-block-post-title:has(+ .wp-block-post-author-name) {
+    margin-block-end: 0;
 }
 
 /* Post images on the home page (before we decided to hide them; see below). */
