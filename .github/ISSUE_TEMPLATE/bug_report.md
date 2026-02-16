@@ -1,38 +1,30 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
+name: Bug/QA/Component/Feature Issue
+​​about: 'A single Bug/QA/Component/Feature for a project.'
+title: '[Bug/QA]: [component area]: description of Bug/QA/Component/Feature'
 labels: ''
 assignees: ''
-
+​
 ---
+​
+## Description *
+<!-- Description of the Bug/QA/Component/Feature. Give both expected AND actual behavior. -->
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Steps to Reproduce/Test
+<!-- Numbered steps to make this error happen, or show that it's fixed. Be precise. -->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Figma/Screenshots
+<!-- Visuals to help explain the Bug/QA/Component/Feature. -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Dev Notes
+<!-- Questions for anyone on TS or client teams. -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## ThinkShout Only Below This Line 
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+### Development Tasks [Budgeted Hrs] *
+- [ ] item
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+### Staging URL 
+<!-- A page where Bug/QA/Component/Feature is staged and can be verified. -->
 
-**Additional context**
-Add any other context about the problem here.
+Consider also: "This Ticket is Done When," "Branch", "Code Reviewer", and "QA Reviewer".
