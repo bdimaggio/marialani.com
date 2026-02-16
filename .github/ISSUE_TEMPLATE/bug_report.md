@@ -1,11 +1,12 @@
 ---
 name: Bug/QA/Component/Feature Issue
-​​about: 'A single Bug/QA/Component/Feature for a project.'
+about: 'A single Bug/QA/Component/Feature for a project.'
 title: '[Bug/QA]: [component area]: description of Bug/QA/Component/Feature'
 labels: ''
-assignees: ''​
+assignees: ''
+
 ---
-​
+
 ## Description *
 <!-- Description of the Bug/QA/Component/Feature. Give both expected AND actual behavior. -->
 
