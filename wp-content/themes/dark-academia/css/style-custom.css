@@ -85,6 +85,11 @@ a:where(:not(.wp-element-button)) {
     color: var(--wp--preset--color--contrast);
 }
 
+/* Couldn't help adding some top-padding between #pinned-text and the first item */
+div#pinned-text + .wp-block-query {
+    padding-top: 30px;
+}
+
 /* Top nav */
 .wp-block-navigation__responsive-container.is-menu-open {
     padding-top: clamp(1rem,var(--wp--preset--spacing--70),20rem);
