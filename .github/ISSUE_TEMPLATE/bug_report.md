@@ -28,7 +28,7 @@ assignees: ''
 <!-- A page where Bug/QA/Component/Feature is staged and can be verified. -->
 
 ## Consider Adding:
-- This Ticket is Done When (user story)
-- Branch (ticket number + dev's choice, e.g. `343-fix-dropdowns`)
+- This Ticket is Done When <!-- user story -->
+- Branch <!-- ticket number + dev's choice, e.g. `343-fix-dropdowns` -->
 - Code Reviewer
 - QA Reviewer
