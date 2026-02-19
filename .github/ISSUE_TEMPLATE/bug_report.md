@@ -22,6 +22,7 @@ assignees: ''
 ## ThinkShout Only Below This Line 
 
 ### Development Tasks [Budgeted Hrs] *
+- [ ] Confirm accessibility of the component
 - [ ] item
 
 ### Staging URL 
